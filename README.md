@@ -4,18 +4,23 @@
 
 ## **ÍNDICE**
 
-* [1. Intro](#1-intro)
-* [2. Instalación](#2-instalacion)
-* [3. Forma de uso](#3-Formadeuso)
+* [1. Importante](#1-importante)
+* [2. Intro](#1-intro)
+* [3. Instalación](#2-instalacion)
+* [4. Forma de uso](#3-Formadeuso)
 
 ****
 
-## 1. Intro
+## 1. Importante
+
+IMPORTANTE: El sitio fue desplegado en esta ruta: https://sprightly-faloodeh-d3a6d1.netlify.app/ pero el servicio que use era http y Netlify corre en https, por lo tanto, la llamada al servicio da error. 
+Localmente funciona bien, pero no desde Netlify.
+
+## 2. Intro
 
 El proyecto actual consiste en un sitio que llama a una servicio publico que consulta los valores de monedas y los muestra en un gráfico. Se pueden consultar por fecha.
 
-
-## 2. Instalacion
+## 3. Instalacion
 
 Para instalar, primero necesitas un servidor local. Para ello, se debe ejecutar el siguiente comando
 
@@ -29,7 +34,7 @@ Una vez instalado, para ejecutar localmente, se debe ejecutar el siguiente coman
 npm start
 ```
 
-## 3. Forma de uso
+## 4. Forma de uso
 
 Cuando el proyecto inicializa, por defecto se cargan los valores de las monedas del día actual.
 
