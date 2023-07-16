@@ -1,7 +1,4 @@
-window.addEventListener("DOMContentLoaded", function () {
-    ponerFechasEnInput();
-    graficoMonedas();
-});
+import {graficoMonedas} from './grafico.js';
 
 const ponerFechasEnInput = () => {
     const input = document.getElementById('fecha');
@@ -14,3 +11,5 @@ const ponerFechasEnInput = () => {
         graficoMonedas();
     });
 }
+
+export {ponerFechasEnInput};

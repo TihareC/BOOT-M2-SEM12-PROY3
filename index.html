@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>My First PHP Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./javascript/general.js"></script>
+    <script type="module">
+        import { ponerFechasEnInput } from './javascript/general.js';
+        import {graficoMonedas} from './javascript/grafico.js';
+
+        window.addEventListener("DOMContentLoaded", function () {
+            ponerFechasEnInput();
+            graficoMonedas();
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="cabecera">
+        <h1>Bienvenidos al sitio de Crowlink</h1>
+        <p>Consulta valores de monedas en línea.</p>
+    </div>
+    <div class="cuerpo">
+        <div class="blog-posteos">
+            <div class="contenedor-fecha">
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <canvas id="graficoMonedas"></canvas>
+        </div>
+    </div>
+    <footer>
+        <p>Desarrollado por Crowlink</p>
+    </footer>
+</body>
+
+</html>

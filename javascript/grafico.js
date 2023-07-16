@@ -1,4 +1,5 @@
-const monedasParaMostrar = [ "CLP","USD","JPY","JMD"];
+import {obtenerDatos} from './servicio.js';
+
 let graficoActual = null;
 const graficoMonedas = async () => {
     const input = document.getElementById('fecha');
@@ -43,3 +44,5 @@ const graficoMonedas = async () => {
         }
     });
 }
+
+export {graficoMonedas}
