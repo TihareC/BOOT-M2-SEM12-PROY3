@@ -1,5 +1,10 @@
 import {graficoMonedas} from './grafico.js';
 
+const inicializarProyecto = () => {
+    ponerFechasEnInput();
+    graficoMonedas();
+}
+
 const ponerFechasEnInput = () => {
     const input = document.getElementById('fecha');
     const fechaActual = new Date().toISOString().slice(0, 10);
@@ -12,4 +17,4 @@ const ponerFechasEnInput = () => {
     });
 }
 
-export {ponerFechasEnInput};
+export {inicializarProyecto, ponerFechasEnInput};
